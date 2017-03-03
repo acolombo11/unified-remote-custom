@@ -2,14 +2,7 @@ local dev = require("device");
 local kb = require("keyboard");
 
 -- Documentation
--- http://www.unifiedremote.com/api
-
--- Device Library
--- http://www.unifiedremote.com/api/libs/device
-
--- Codes need to be in the PRONTO format!
--- http://www.remotecentral.com/cgi-bin/files/rcfiles.cgi?area=pronto&db=discrete
--- http://www.unifiedremote.com/tutorials/how-to-use-ir
+-- https://github.com/unifiedremote/Docs
 
 actions.open_youtube = function()
 	os.start("firefox", "-url http://www.youtube.com/tv");
