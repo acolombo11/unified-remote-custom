@@ -6,5 +6,5 @@ These are my custom remotes made to suit my own needs and devices. They are only
 
 * [Website](http://www.unifiedremote.com/)
 * [Github](https://github.com/unifiedremote)
-* [Documentation](https://github.com/unifiedremote/Docs)
+* [Custom Remotes Documentation](https://github.com/unifiedremote/Docs)
 * [How to Install a Custom Remote](https://www.unifiedremote.com/tutorials/how-to-install-a-custom-remote)
