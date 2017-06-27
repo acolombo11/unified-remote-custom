@@ -18,37 +18,45 @@ actions.open_youtube = function()
 end
 
 actions.open_netflix = function()
-	os.start("firefox", "-url http://www.netflix.com");
+	os.start("firefox", "-url http://www.netflix.com/");
 end
 
 actions.open_steam = function()
+	-- win.switchto("steam.exe");
 	os.start("steam:");
 end
 
 actions.close_firefox = function()
-	win.quit("steam.exe");
-end
-
-actions.close_steam = function()
 	win.quit("firefox.exe");
 end
 
---@help Launch the Steam Remote
-actions.remote_steam = function()
-	dev.switch("Unified.SteamBasic");
+actions.close_steam = function()
+	win.quit("steam.exe");
 end
 
---@help Launch the Firefox Remote
+actions.remote_steam = function()
+	dev.switch("Peter Hunt.Steam");
+end
+
 actions.remote_firefox = function()
 	dev.switch("Unified.Firefox");
 end
 
---@help Launch the Steam Monitor
 actions.remote_monitor = function()
 	dev.switch("Unified.Monitor");
 end
 
+actions.remote_netflix = function()
+	dev.switch("Unified.Netflix (Web)");
+end
+
+actions.remote_youtube = function()
+	os.start("firefox", "-url http://www.youtube.com/");
+	dev.switch("Unified.YouTube (Web)");
+end
+
 --@help Switch Steam as the active window, then press ALT+Enter, which is the shortcut to Big Picture Mode
+actions.steam_fullscreen = function()
 	win.switchtowait("steam.exe");
 	kb.stroke("alt", "enter");
 end

@@ -5,14 +5,22 @@
 		<button text="TV Power" color="blue" onhold="remote_monitor" ontap="@irsend,UIR.FREQ.38216.SEQ.338.170.22.21.22.21.21.64.21.21.22.21.22.21.22.21.22.21.22.63.22.63.22.21.22.63.22.63.22.63.22.63.22.63.22.21.22.21.22.21.21.64.21.21.22.21.22.21.22.21.22.63.22.63.22.63.22.21.22.63.22.63.22.63.22.63.22.1558.31.32.64.32.32.32.32.32.32.32.32.32.31.32.32.32.32.64.32.32.64.32.32.1618.337.170.21.21.22.21.22.63.22.21.21.20.22.21.22.21.22.21.22.63.22.63.22.21.22.63.22.63.22.63.22.63.22.63.22.21.22.21.22.21.21.64.21.21.22.21.22.21.22.21.22.63.22.63.22.63.22.21.22.63.22.63.22.63.22.63.22.1557" />
 	</row>
 	<row>
-		<button text="Firefox" color="orange" ontap="open_firefox" onhold="close_firefox" />
-		<button text="Roja" color="red" ontap="open_roja" />
-		<button text="Youtube" color="red" ontap="open_youtube" />
-		<button text="Netflix" color="red" ontap="open_netflix" />
-		<button text="Fullscreen" color="grey" icon="fullscreen" ontap="firefox_fullscreen" onhold="remote_firefox" />
+		<button text="Firefox" color="orange" ontap="open_firefox" onhold="close_firefox" weight="1" />
+		<grid weight="2">
+			<row>
+				<button text="Rojadirecta" color="red" ontap="open_roja" />
+			</row>
+			<row>
+				<button text="Youtube" color="red" ontap="open_youtube" onhold="remote_youtube" />
+			</row>
+			<row>
+				<button text="Netflix" color="red" ontap="open_netflix" onhold="remote_netflix" />
+			</row>
+		</grid>
+		<button text="Fullscreen" color="grey" icon="fullscreen" ontap="firefox_fullscreen" onhold="remote_firefox" weight="1" />
 	</row>
 	<row>
-		<button text="Steam" color="blue" ontap="open_steam" onhold="open_steam"/>
+		<button text="Steam" color="blue" ontap="open_steam" onhold="close_steam"/>
 		<button text="900p60" color="purple" ontap="res_900p60" />
 		<button text="1080p60" color="purple" ontap="res_1080p60" />
 		<button text="Fullscreen" color="grey" icon="fullscreen" ontap="steam_fullscreen" onhold="remote_steam" />
