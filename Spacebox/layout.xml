@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+	<row>
+		<button text="Wake on Lan" color="blue" ontap="@wol"/>
+		<button text="Hybernate" color="blue" ontap="hibernate" onhold="shutdown"/>
+		<button text="TV Power" color="blue" ontap="@irsend,UIR.FREQ.38216.SEQ.338.170.22.21.22.21.21.64.21.21.22.21.22.21.22.21.22.21.22.63.22.63.22.21.22.63.22.63.22.63.22.63.22.63.22.21.22.21.22.21.21.64.21.21.22.21.22.21.22.21.22.63.22.63.22.63.22.21.22.63.22.63.22.63.22.63.22.1558.31.32.64.32.32.32.32.32.32.32.32.32.31.32.32.32.32.64.32.32.64.32.32.1618.337.170.21.21.22.21.22.63.22.21.21.20.22.21.22.21.22.21.22.63.22.63.22.21.22.63.22.63.22.63.22.63.22.63.22.21.22.21.22.21.21.64.21.21.22.21.22.21.22.21.22.63.22.63.22.63.22.21.22.63.22.63.22.63.22.63.22.1557" />
+	</row>
+	<row>
+		<button text="Firefox" color="orange" ontap="open_firefox" />
+		<button text="Roja" color="red" ontap="open_roja" />
+		<button text="Youtube" color="red" ontap="open_youtube" />
+		<button text="Netflix" color="red" ontap="open_netflix" />
+		<button text="Fullscreen" color="grey" icon="fullscreen" ontap="firefox_fullscreen" />
+	</row>
+	<row>
+		<button text="Steam" color="blue" ontap="open_steam" />
+		<button text="900p60" color="green" ontap="res_900p60" />
+		<button text="1080p60" color="green" ontap="res_1080p60" />
+	</row>
+</layout>
