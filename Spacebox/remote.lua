@@ -1,5 +1,6 @@
 local dev = require("device");
 local kb = require("keyboard");
+local win = libs.win;
 
 -- Documentation
 -- https://github.com/unifiedremote/Docs
@@ -24,7 +25,9 @@ actions.open_steam = function()
 	os.start("steam");
 end
 
+--@help Switch Firefox as the active window, then press F11, which is the shortcut to full-screen
 actions.firefox_fullscreen = function()
+	win.switchtowait("firefox.exe");
 	kb.press("f11");
 end
 
@@ -41,7 +44,6 @@ end
 --@help Put system in hibernate state
 actions.hibernate = function ()
 	os.execute("shutdown /h");
-	dev.wol();
 	--PowrProf.SetSuspendState(true, true, false);
 end
 
@@ -50,5 +52,4 @@ end
 actions.shutdown = function (sec)
 	if not sec then sec = 5; end
 	os.execute("shutdown /s /f /t " .. sec);
-	dev.vibrate();
 end
