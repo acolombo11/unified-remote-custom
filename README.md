@@ -1,8 +1,10 @@
 # unified-remote-custom
 
-These are my custom remotes made to suit my own needs and devices. They are only for Windows and they require a device with an IR blaster for full functionality. They are not guaranteed to work on other systems.
+Unified Remote is an app to turn your smartphone into a wireless universal remote control for your computer.
 
-**Check out these Unified Remote links for more information:**
+These are my custom remotes made to suit my own needs and devices. I made them to work on Windows servers and they require a device with an IR blaster for full functionality. They are not guaranteed to work on other systems.
+
+**Check out these Unified Remote links for more information/help to make your own:**
 
 * [Website](http://www.unifiedremote.com/)
 * [Github](https://github.com/unifiedremote)
