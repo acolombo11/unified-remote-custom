@@ -6,7 +6,7 @@ SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
   ChangeResolution(32,1440,900,60)
   return
 
->#F11:: ;Left Windows + F11
+>#F11:: ;Right Windows + F11
   ChangeResolution(32,1920,1080,60)
   return
 
